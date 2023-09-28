@@ -4,33 +4,25 @@
 #include "lista.h"
 
 class camion {
-private:
+    private:
 /*
-    metodos pilaCamion;
+    metodos pilaCamion;  //Esto sobra, debido a que esta clase solo debe crear el objeto camión,
+                           para lo que es donde guardar, se crea una nueva instancia para la pila
+*/
     int capacidad;
     int longitud;
     int ancho;
     int largo;
-*/
 
-public:
-    camion() {
+
+    public:
+    camion(int pCapacidad, int pLongitud, int pAncho, int pLargo) {
         //Constructor para definir parámetros
-    }
-
-    bool isEmpty()
-    {
-//        return pilaCamion.isEmpty();
-    };
-
-    void push(void *pElement)
-    {
-//        pilaCamion.addToBegining(pElement);
-    };
-
-    void *pop()
-    {
-//        return pilaCamion.removeFirst();
+        
+        capacidad = pCapacidad;
+        longitud = pLongitud;
+        ancho = pAncho;
+        largo = pLargo;
     }
 };
 
