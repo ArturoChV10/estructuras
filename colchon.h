@@ -1,5 +1,5 @@
-#ifndef _COLCHON_
-#define _COLCHON_
+#ifndef COLCHON_H
+#define COLCHON_H
 
 #include "lista.h"
 #include <string>
@@ -7,23 +7,26 @@
 using namespace std;
 
 class colchon {
-private:
-/*
-    metodos pilaColchon;  //Esto sobra, debido a que esta clase solo debe crear el objeto colchón,
-                           para que después pueda ser manejado dentro de pilas o colas
-*/
-    string name;
-    int peso;
-    string medidas;
+    private:
+        string name;
+        int peso;
+        string medidas;
 
 
-public:
-    colchon(const string pName, int pPeso, const string pMedidas) {
-        //Constructor para definir parámetros
-        name = pName;
-        peso = pPeso;
-        medidas = pMedidas;
-    }
+    public:
+        colchon(string pName, int pPeso, string pMedidas) {
+            name = pName;
+            peso = pPeso;
+            medidas = pMedidas;
+        }
+
+        string getName() {
+            return name;
+        }
+
+        int getPeso() {
+            return peso;
+        }
 };
 
 #endif

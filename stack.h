@@ -2,6 +2,7 @@
 #define _STACK_ 0
 
 #include "lista.h"
+//#include "colchon.h"
 
 struct stack {
     struct metodos pila;
@@ -11,16 +12,16 @@ struct stack {
     tenes que llenarnos de adentro hacia afuera y cuando se descargan se sacan del frente hacia adentro"
     */
 
-    bool isEmpty() {
-        //Métodos aplicados sobre la pila
+    bool estaVacio() {
+        return pila.isEmpty();
     };
 
-    void push(void* pElement) {
-        //Métodos aplicados sobre la pila
+    void push(colchon* pElement) {
+        pila.addToBegining(pElement);
     };
 
-    void* pop() {
-        //Métodos aplicados sobre la pila
+    colchon* pop() {
+        return pila.removeFirst();
     }
 
 };

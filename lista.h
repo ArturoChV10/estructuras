@@ -2,6 +2,7 @@
 #define _LISTAGENERICA_ 1
 
 #include "nodo.h"
+//#include "colchon.h"
 #include <stdlib.h>
 
 struct metodos
@@ -12,23 +13,21 @@ struct metodos
 
     bool isEmpty()
     {
-/*
         if(size==0) {
             return true;
         }else {
             return false;
         }
-*/
     }
 
     int getSize()
     {
-//        return size;
+        return size;
     }
 
-    void addToEnd(void *pData)
+    void addToEnd(colchon *pData)
     {
-/*
+
         struct nodo *newNode = (struct nodo *)malloc(sizeof(struct nodo));
         newNode->data = pData;
 
@@ -45,12 +44,12 @@ struct metodos
         }
 
         size++;
-*/
+
     }
 
-    void addToBegining(void *pData)
+    void addToBegining(colchon *pData)
     {
-/*
+
         struct nodo *newNode = (struct nodo *)malloc(sizeof(struct nodo));
         newNode->data = pData;
 
@@ -67,13 +66,13 @@ struct metodos
         }
 
         size++;
-*/
+
     }
 
-    void *removeFirst()
+    colchon *removeFirst()
     {
-/*
-        void *result = nullptr;
+
+        colchon *result = nullptr;
         struct nodo *cursor = start;
 
         if (size > 1)
@@ -93,7 +92,7 @@ struct metodos
         }
 
         return result;
-*/
+
     }
 };
 
