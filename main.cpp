@@ -56,7 +56,7 @@ int main(){
     }
 //-------------------------------------------------------------------------------------------------
 
-//Tengo que definir de que manera se va a solcitar el pedido
+//Tengo que definir de que manera se va a solicitar el pedido
 
 //Buscar como sacar la información con un parser
 

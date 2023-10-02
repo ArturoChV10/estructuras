@@ -1,24 +1,32 @@
 #ifndef CAMION_H
-#define CAMION_H 
+#define CAMION_H
 
 #include "lista.h"
 
-class camion {
+class Camion
+{
 private:
-/*
-    metodos pilaCamion;  //Esto sobra, debido a que esta clase solo debe crear el objeto camión,
-                           para lo que es donde guardar, se crea una nueva instancia para la pila
-*/
     int capacidad;
     int ancho;
     int largo;
-
+    Stack<Colchon *> cajon;
+    int id;
+    bool available;
 
 public:
-    camion(int pCapacidad, int pAncho, int pLargo) {
+    Camion(int pCapacidad, int pAncho, int pLargo)
+    {
         capacidad = pCapacidad;
         ancho = pAncho;
         largo = pLargo;
+    }
+
+    int getCapacity() {
+        return capacidad;
+    }
+    
+    bool getState() {
+        return available;
     }
 };
 

@@ -2,9 +2,10 @@
 #define _LISTAGENERICA_ 1
 
 #include "nodo.h"
-//#include "colchon.h"
+// #include "colchon.h"
 #include <stdlib.h>
 
+// usar a lista generica
 struct metodos
 {
     struct nodo *start = nullptr;
@@ -13,9 +14,12 @@ struct metodos
 
     bool isEmpty()
     {
-        if(size==0) {
+        if (size == 0)
+        {
             return true;
-        }else {
+        }
+        else
+        {
             return false;
         }
     }
@@ -25,7 +29,7 @@ struct metodos
         return size;
     }
 
-    void addToEnd(colchon *pData)
+    void addToEnd(void *pData)
     {
 
         struct nodo *newNode = (struct nodo *)malloc(sizeof(struct nodo));
@@ -44,10 +48,9 @@ struct metodos
         }
 
         size++;
-
     }
 
-    void addToBegining(colchon *pData)
+    void addToBegining(void *pData)
     {
 
         struct nodo *newNode = (struct nodo *)malloc(sizeof(struct nodo));
@@ -66,10 +69,9 @@ struct metodos
         }
 
         size++;
-
     }
 
-    colchon *removeFirst()
+    void *removeFirst()
     {
 
         colchon *result = nullptr;
@@ -92,7 +94,6 @@ struct metodos
         }
 
         return result;
-
     }
 };
 

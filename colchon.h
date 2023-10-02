@@ -6,27 +6,35 @@
 
 using namespace std;
 
-class colchon {
-    private:
-        string name;
-        int peso;
-        string medidas;
+class Colchon
+{
+private:
+    string name;
+    int peso;
+    int alto;
+    int ancho;
+    int profundidad;
 
+public:
+    Colchon(string pName, int pPeso, int pAlto, int pAncho, int pProfundidad)
+    {
+        name = pName;
+        peso = pPeso;
+        alto = pAlto;
+        ancho = pAncho;
+        profundidad = pProfundidad;
+        
+    }
 
-    public:
-        colchon(string pName, int pPeso, string pMedidas) {
-            name = pName;
-            peso = pPeso;
-            medidas = pMedidas;
-        }
+    string getName()
+    {
+        return name;
+    }
 
-        string getName() {
-            return name;
-        }
-
-        int getPeso() {
-            return peso;
-        }
+    int getPeso()
+    {
+        return peso;
+    }
 };
 
 #endif
