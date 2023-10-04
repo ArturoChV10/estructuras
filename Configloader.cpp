@@ -11,7 +11,7 @@ struct ConfigRutas
     vector<string> velocidad;
     vector<string> distancia;
     vector<int> tiempo;
-}
+};
 
 struct ConfigColchones
 {
@@ -20,7 +20,7 @@ struct ConfigColchones
     vector<int> anchoColchon;
     vector<int> largoColchon;
     vector<int> altoColchon;
-}
+};
 
 struct ConfigBodega
 {
@@ -49,7 +49,7 @@ struct ConfigCamiones
     int largo;
     int ancho;
     int alto;
-}
+};
 
 class Configloader
 {
@@ -192,6 +192,9 @@ public:
     {
         return configcolchones;
     }
+};
+
+
 /*
     //La mejor manera de sacar los datos de estos getters es a traves de un arrayList o un vector,
     //de manera que se agreguen todos los datos dentro del arrayList para luego meterlos
@@ -263,4 +266,3 @@ int main() {
     return 0;
 }
 */
-};

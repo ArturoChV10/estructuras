@@ -3,6 +3,8 @@
 
 #include "lista.h"
 
+using namespace std;
+
 class Camion
 {
 private:

@@ -5,7 +5,7 @@
 // #include "colchon.h"
 
 // usar el generic
-struct stack
+struct Stack
 {
     struct metodos pila;
 

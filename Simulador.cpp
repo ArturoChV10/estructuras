@@ -1,3 +1,8 @@
+#include "Bodega.cpp"
+#include "Configloader.cpp"
+
+using namespace std;
+
 class Simulador
 {
 private:

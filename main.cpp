@@ -1,6 +1,6 @@
 #include "lista.h"
-#include "queue.h"
-#include "stack.h"
+#include "Queue.h"
+#include "Stack.h"
 #include "colchon.h"
 #include "camion.h"
 #include <iostream>
@@ -11,11 +11,11 @@ using namespace std;
 
 //Se crearon las pilas y colas necesarias
 
-struct stack listaAlmacenS;
-struct stack listaAlmacenL;
-struct stack pilaCamion;
-struct queue colaCarga;
-struct queue colaDescarga;
+struct Stack listaAlmacenS;
+struct Stack listaAlmacenL;
+struct Stack pilaCamion;
+struct Queue colaCarga;
+struct Queue colaDescarga;
 
 //Se crea el objeto camion, el único dato importante de este objeto es la capacidad máxima, ya que si el peso
 //del pedido excede dicha capacidad, el pedido no se puede realizar

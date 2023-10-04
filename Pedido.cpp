@@ -1,18 +1,20 @@
 #include <string>
-#include "list.h"
+#include "lista.h"
+
+using namespace std;
 
 class Pedido
 {
 private:
     int number;
     struct t_date fecha;
-    List<Colchon *> colchones;
+    metodos<Colchon *> colchones;
 
 public:
     Pedido(int pCantidad)
     {
         // numero de orden puede ser un random grande
-        colchones = new List<Colchon *>();
+        colchones = new metodos<Colchon *>();
     }
 
     void addColchon(Colchon *pColchon)

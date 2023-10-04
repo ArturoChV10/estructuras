@@ -1,10 +1,14 @@
+#include "lista.h"
+
+using namespace std;
+
 class Flotilla
 {
 private:
-    List<Camion *> *camiones;
+    metodos<Camion *> *camiones;
 
 public:
-    void enviar(List<Colchon *> pColchones)
+    void enviar(metodos<Colchon *> pColchones)
     {
         // ver los camiones disponibles para enviar los colchones
     }

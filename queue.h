@@ -4,7 +4,9 @@
 #include "lista.h"
 //#include "colchon.h"
 
-struct queue {
+using namespace std;
+
+struct Queue {
     struct metodos cola;
 
     //"la cola de carga para subir al camion podríamos pensar en ordenes de cosas que hay que subir a un camion"
